@@ -16,35 +16,31 @@ const CreatePost = (props) => {
   }
   return (
     <form onSubmit={handlesSubmit}>
-      <div className="mb-3">
-        <label className="form-label">Date</label>
+      <div className="border-box">
+        <label>Date</label>
         <input
           type="date"
           className="form-control"
           value={date}
           onChange={(event) => setDate(event.target.value)}
         />
-      </div>
-      <div className="mb-3">
-        <label className="form-label">Name</label>
+        <label>Name</label>
         <input
           type="text"
           className="form-control"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
-      </div>
-      <div className="mb-3">
-        <label className="form-label">Post</label>
+        <label>Post</label>
         <textarea
           type="text"
           className="form-control"
           value={comment}
           onChange={(event) => setComment(event.target.value)}
         />
-      </div>
-      <div className = 'd-grid gap-2'>
-        <button type="submit">Create</button>
+        <div className="create-button">
+          <button type="submit">Create</button>
+        </div>
       </div>
     </form>
   );

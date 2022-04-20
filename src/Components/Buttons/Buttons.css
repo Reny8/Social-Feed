@@ -10,3 +10,7 @@
     background-color:red;
     color: white;
 }
+.post-buttons {
+    display:flex;
+    justify-content:right
+}

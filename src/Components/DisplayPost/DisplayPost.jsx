@@ -1,18 +1,23 @@
+import Buttons from '../Buttons/Buttons.jsx'
+
 const DisplayPost = (props) => {
   return (
-    <table>
-      <tbody>
-        {props.postEntries.map((post,index) => {
-          return (
-            <tr key={index}>
-              <td>{post.date}</td>
-              <td><h2>{post.name}</h2></td>
-              <td>{post.comment}</td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <div>
+      {props.postEntries.map((post, index) => {
+        return (
+          <ul key={index} class="border-box">
+            <div>
+              <li>{post.date}</li>
+              <li>
+                <h3>{post.name}</h3>
+              </li>
+              <li>{post.comment}</li>
+              <Buttons />
+            </div>
+          </ul>
+        );
+      })}
+    </div>
   );
 };
 

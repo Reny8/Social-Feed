@@ -1,17 +1,21 @@
-/* html {
-   background-color: darkolivegreen;
-} */
-table {
-    background-color:white;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 div header {
     background-color: white;
+    box-shadow: 2px 2px 6px grey
 
 }
-form {
+.border-box {
     background-color:white;
     margin:2rem;
+    box-shadow: 2px 2px 6px grey;
+    border-radius: 25px;
+    padding: 20px;
 
+}
+ul {
+    list-style-type: none;
+}
+
+.create-button {
+    margin-top: 1rem;
 }

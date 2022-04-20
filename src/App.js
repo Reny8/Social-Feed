@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import DisplayPost from "./Components/DisplayPost/DisplayPost";
 import CreatePost from "./Components/CreatePost/CreatePost";
-import LikeButton from "./Components/Buttons/Buttons";
 
 function App() {
   const [post, setPost] = useState([
@@ -31,13 +30,12 @@ function App() {
           <h1>SocialFeed</h1>
         </header>
       </div>
-      <div className="border-box">
+      <div>
         <CreatePost addPost={addPost} />
       </div>
-      <div className="border-box">
+      <div>
         <DisplayPost postEntries={post} />
       </div>
-      <LikeButton />
     </div>
   );
 }

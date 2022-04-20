@@ -1,7 +1,7 @@
 import "./Buttons.css";
 import React, { useState } from "react";
 
-const LikeButton = (props) => {
+const Buttons = (props) => {
   const [likeButton, setLikeButton] = useState("inactive");
   const [disLikeButton, setDisLikeButton] = useState("inactive");
 
@@ -27,7 +27,7 @@ const LikeButton = (props) => {
   }
 
   return (
-    <div>
+    <div className="post-buttons">
       <div>
         <button className={likeButton} onClick={likeClick}>
           LIKE
@@ -42,4 +42,4 @@ const LikeButton = (props) => {
   );
 };
 
-export default LikeButton;
+export default Buttons;
