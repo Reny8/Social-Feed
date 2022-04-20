@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./App.css";
-import DisplayPost from "./Components/DisplayPost/DisplayPost"
+import DisplayPost from "./Components/DisplayPost/DisplayPost";
 import CreatePost from "./Components/CreatePost/CreatePost";
-
+import LikeButton from "./Components/Buttons/Buttons";
 
 function App() {
   const [post, setPost] = useState([
     {
       date: "2022-04-01",
       name: "JJ Vega",
-      comment: "It's April Fools Day! Give this a dislike if you really like it :)",
+      comment:
+        "It's April Fools Day! Give this a dislike if you really like it :)",
     },
     {
       date: "2022-04-19",
@@ -22,23 +23,23 @@ function App() {
     let tempPost = [...post, newPost];
     setPost(tempPost);
   }
-  
+
   return (
     <div>
-      <header>
-        <h1>SocialFeed</h1>
-      </header>
       <div>
-        <CreatePost addPost = {addPost}/>
+        <header>
+          <h1>SocialFeed</h1>
+        </header>
       </div>
-      <div>
+      <div className="border-box">
+        <CreatePost addPost={addPost} />
+      </div>
+      <div className="border-box">
         <DisplayPost postEntries={post} />
       </div>
+      <LikeButton />
     </div>
   );
 }
 
 export default App;
-// Create a FORM COMPONENT that can add a new post to the main feed
-// Create a Post component
-// Create Display Post component

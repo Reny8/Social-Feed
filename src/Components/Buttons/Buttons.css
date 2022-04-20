@@ -1,0 +1,12 @@
+.inactive {
+    background-color:grey;
+    color: white;
+}
+.active {
+    background-color: green;
+    color: white;
+}
+.on {
+    background-color:red;
+    color: white;
+}

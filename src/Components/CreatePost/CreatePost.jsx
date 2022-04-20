@@ -5,31 +5,47 @@ const CreatePost = (props) => {
   const [name, setName] = useState(" ");
   const [comment, setComment] = useState(" ");
 
-function handlesSubmit(event) {
-  event.preventDefault()
-  let newPost = {
-    date: date,
-    name: name,
-    comment: comment,
+  function handlesSubmit(event) {
+    event.preventDefault();
+    let newPost = {
+      date: date,
+      name: name,
+      comment: comment,
+    };
+    props.addPost(newPost);
   }
-  console.log(newPost)
-  props.addPost(newPost)
-}
   return (
-    <form onSubmit = {handlesSubmit}>
-      <div>
-        <label>Date</label>
-        <input type="date" value={date} onChange = {(event) => setDate(event.target.value)}/>
+    <form onSubmit={handlesSubmit}>
+      <div className="mb-3">
+        <label className="form-label">Date</label>
+        <input
+          type="date"
+          className="form-control"
+          value={date}
+          onChange={(event) => setDate(event.target.value)}
+        />
       </div>
-      <div>
-        <label>Name</label>
-        <input type="text" value={name} onChange = {(event) => setName(event.target.value)}/>
+      <div className="mb-3">
+        <label className="form-label">Name</label>
+        <input
+          type="text"
+          className="form-control"
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
       </div>
-      <div>
-        <label>Post</label>
-        <textarea type="text" value={comment} onChange = {(event) => setComment(event.target.value)}/>
+      <div className="mb-3">
+        <label className="form-label">Post</label>
+        <textarea
+          type="text"
+          className="form-control"
+          value={comment}
+          onChange={(event) => setComment(event.target.value)}
+        />
       </div>
-      <button type='submit'>Submit Post</button>
+      <div className = 'd-grid gap-2'>
+        <button type="submit">Create</button>
+      </div>
     </form>
   );
 };
