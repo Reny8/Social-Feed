@@ -1,25 +1,36 @@
 import React, { useState } from "react";
 import "./App.css";
-import DisplayPost from "./Components/DisplayPost";
+import DisplayPost from "./Components/DisplayPost/DisplayPost"
+import CreatePost from "./Components/CreatePost/CreatePost";
+
 
 function App() {
   const [post, setPost] = useState([
     {
-      date: "04.01.2022",
+      date: "2022-04-01",
       name: "JJ Vega",
-      post: "It's April Fools Day! Give this a dislike if you really like it :)",
+      comment: "It's April Fools Day! Give this a dislike if you really like it :)",
     },
     {
-      date: "4.19.2022",
-      name: "David Lagrange",
-      post: "I love playing guitar. Does anyone want to play with me?",
+      date: "2022-04-19",
+      name: "David L",
+      comment: "I love playing guitar. Does anyone want to play with me?",
     },
   ]);
+
+  function addPost(newPost) {
+    let tempPost = [...post, newPost];
+    setPost(tempPost);
+  }
+  
   return (
     <div>
       <header>
         <h1>SocialFeed</h1>
       </header>
+      <div>
+        <CreatePost addPost = {addPost}/>
+      </div>
       <div>
         <DisplayPost postEntries={post} />
       </div>
