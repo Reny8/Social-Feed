@@ -38,8 +38,8 @@ const CreatePost = (props) => {
           value={comment}
           onChange={(event) => setComment(event.target.value)}
         />
-        <div className="create-button">
-          <button type="submit">Create</button>
+        <div>
+          <button className="create-button"type="submit">Create</button>
         </div>
       </div>
     </form>

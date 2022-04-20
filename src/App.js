@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className = "page">
       <div>
         <header>
           <h1>SocialFeed</h1>

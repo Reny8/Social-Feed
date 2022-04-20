@@ -1,6 +1,7 @@
 import "./Buttons.css";
 import React, { useState } from "react";
 
+
 const Buttons = (props) => {
   const [likeButton, setLikeButton] = useState("inactive");
   const [disLikeButton, setDisLikeButton] = useState("inactive");
@@ -29,14 +30,10 @@ const Buttons = (props) => {
   return (
     <div className="post-buttons">
       <div>
-        <button className={likeButton} onClick={likeClick}>
-          LIKE
-        </button>
+        <button className={likeButton} onClick={likeClick}>Like</button>
       </div>
       <div>
-        <button className={disLikeButton} onClick={disLikeClick}>
-          DISLIKE
-        </button>
+        <button className={disLikeButton} onClick={disLikeClick}>Dislike</button>
       </div>
     </div>
   );
