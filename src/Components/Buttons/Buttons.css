@@ -1,14 +1,20 @@
 .inactive {
-    background-color:grey;
-    color: white;
+    color: black;
+    border-radius: 25px;
+    border-color:white;
+    
 }
 .active {
-    background-color: green;
-    color: white;
+    background-color:green;
+    fill:white;
+    border-color:green;
+    border-radius:25px;
 }
 .on {
     background-color:red;
-    color: white;
+    fill:white;
+    border-color:red;
+    border-radius:25px;
 }
 .post-buttons {
     display:flex;

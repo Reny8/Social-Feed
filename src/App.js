@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import DisplayPost from "./Components/DisplayPost/DisplayPost";
 import CreatePost from "./Components/CreatePost/CreatePost";
-
 function App() {
   const [post, setPost] = useState([
     {
