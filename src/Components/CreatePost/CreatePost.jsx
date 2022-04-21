@@ -17,24 +17,24 @@ const CreatePost = (props) => {
   return (
     <form onSubmit={handlesSubmit}>
       <div className="border-box">
-        <label for="name">Name</label>
-        <input 
+        <label>Name</label>
+        <input
           type="text"
           className="form-control"
-          name="name"
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
-        <label for="post">Post</label>
+        <label>Post</label>
         <textarea
           type="text"
           className="form-control"
-          name="post"
           value={comment}
           onChange={(event) => setComment(event.target.value)}
         />
         <div>
-          <button className="create-button"type="submit">Create</button>
+          <button className="create-button" type="submit">
+            Create
+          </button>
         </div>
       </div>
     </form>
