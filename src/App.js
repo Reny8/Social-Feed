@@ -26,7 +26,7 @@ function App() {
     <div className = "page">
       <div>
         <header>
-          <h1>SocialFeed</h1>
+          <h1>Social<medium className="text-muted">Feed</medium></h1>
         </header>
       </div>
       <div>
