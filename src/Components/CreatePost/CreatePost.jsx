@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CreatePost = (props) => {
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(new Date().toLocaleDateString());
   const [name, setName] = useState(" ");
   const [comment, setComment] = useState(" ");
 
@@ -17,13 +17,6 @@ const CreatePost = (props) => {
   return (
     <form onSubmit={handlesSubmit}>
       <div className="border-box">
-        <label>Date</label>
-        <input
-          type="date"
-          className="form-control"
-          value={date}
-          onChange={(event) => setDate(event.target.value)}
-        />
         <label>Name</label>
         <input
           type="text"

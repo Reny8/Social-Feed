@@ -5,7 +5,7 @@ const DisplayPost = (props) => {
     <div>
       {props.postEntries.map((post, index) => {
         return (
-          <ul key={index} class="border-box">
+          <ul key={index} className="border-box">
             <div>
               <li>{post.date}</li>
               <li>

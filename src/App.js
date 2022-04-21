@@ -5,13 +5,13 @@ import CreatePost from "./Components/CreatePost/CreatePost";
 function App() {
   const [post, setPost] = useState([
     {
-      date: "2022-04-01",
+      date: "4/1/2022",
       name: "JJ Vega",
       comment:
         "It's April Fools Day! Give this a dislike if you really like it :)",
     },
     {
-      date: "2022-04-19",
+      date: "4/19/2022",
       name: "David L",
       comment: "I love playing guitar. Does anyone want to play with me?",
     },
@@ -26,7 +26,7 @@ function App() {
     <div className = "page">
       <div>
         <header>
-          <h1>Social<medium className="text-muted">Feed</medium></h1>
+          <h1>Social<small className="text-muted">Feed</small></h1>
         </header>
       </div>
       <div>
