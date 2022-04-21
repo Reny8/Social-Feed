@@ -11,9 +11,9 @@
     border-radius:25px;
 }
 .on {
-    background-color:red;
+    background-color:darkred;
     fill:white;
-    border-color:red;
+    border-color:darkred;
     border-radius:25px;
 }
 .post-buttons {

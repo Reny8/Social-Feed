@@ -1,13 +1,16 @@
 
 div header {
     background-color: white;
-    box-shadow: 2px 2px 6px grey
+    box-shadow: 3px 3px 7px lightgray;
+    border-style: none;
+    padding: 1rem;
+
 }
 
 .border-box {
     background-color:white;
     margin:2rem;
-    box-shadow: 2px 2px 6px grey;
+    box-shadow: 4px 4px 8px grey;
     border-radius: 25px;
     padding: 20px;
 
@@ -22,9 +25,9 @@ ul {
     border-style: none;
     color: white;
     background-color:#1867AB;
-    width: 10%;
+    width: 7rem;
 }
 
 .page {
-    background-color:#E2F2EE
+    background-color:#E2F2EE;
 }
