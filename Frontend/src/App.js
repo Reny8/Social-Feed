@@ -26,7 +26,7 @@ function App() {
         </header>
       </div>
       <div>
-        <CreatePost />
+        <CreatePost getAllPosts={getAllPosts} />
       </div>
       <div>
         <DisplayPost posts={posts} />
