@@ -119,3 +119,5 @@ try:
     from socialfeed.local_settings import *
 except ImportError:
     pass
+
+CORS_ALLOW_ALL_ORIGINS = True
