@@ -6,7 +6,6 @@ from .serializers import PostSerializer
 
 # GET ALL POST
 # CREATE A POST
-# LIKE AND DISLIKE POST 
 @api_view(['GET','POST'])
 def post_list(request):
     if request.method == 'GET':
