@@ -17,5 +17,16 @@ def post_list(request):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
+        
+
+@api_view(['PUT'])
+def update_post(request,pk):
+    post = Post.objects.get(pk = pk)
+    if request.method == 'PUT':
+        serializer = PostSerializer(post, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)
+        
 
 
