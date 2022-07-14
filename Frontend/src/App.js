@@ -1,25 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import DisplayPost from "./Components/DisplayPost/DisplayPost";
 import CreatePost from "./Components/CreatePost/CreatePost";
+import axios from "axios";
 function App() {
-  const [post, setPost] = useState([
-    {
-      date: "4/1/2022",
-      name: "JJ Vega",
-      comment:
-        "It's April Fools Day! Give this a dislike if you really like it :)",
-    },
-    {
-      date: "4/19/2022",
-      name: "David L",
-      comment: "I love playing guitar. Does anyone want to play with me?",
-    },
-  ]);
+  const [posts, setPosts] = useState([]);
 
-  function addPost(newPost) {
-    let tempPost = [...post, newPost];
-    setPost(tempPost);
+  useEffect(()=>{
+    getAllPosts()
+  },[])
+  async function getAllPosts() {
+    try {
+      let response = await axios.get('http://127.0.0.1:8000/posts/')
+      setPosts(response.data)
+    } catch (error) {
+      alert(error.message)
+    }
   }
 
   return (
@@ -30,10 +26,10 @@ function App() {
         </header>
       </div>
       <div>
-        <CreatePost addPost={addPost} />
+        <CreatePost />
       </div>
       <div>
-        <DisplayPost postEntries={post} />
+        <DisplayPost posts={posts} />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Buttons from '../Buttons/Buttons.jsx'
 const DisplayPost = (props) => {
   return (
     <div>
-      {props.postEntries.map((post, index) => {
+      {props.posts.map((post, index) => {
         return (
           <ul key={index} className="border-box">
             <div>
