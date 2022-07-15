@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./UpdatePost.css";
 const UpdatePost = (props) => {
   const [modal, setModal] = useState("");
@@ -17,10 +18,14 @@ const UpdatePost = (props) => {
     setModal("");
     setOverlay("");
   }
-  function saveChanges(body, id) {
-    console.log(body);
-    console.log(overlay)
-
+  async function saveChanges(body, id) {
+    try {
+      await axios.put(`http://127.0.0.1:8000/posts/${id}/`, body);
+      closeModal();
+      props.getAllPosts();
+    } catch (error) {
+      alert(error.message);
+    }
   }
   return (
     <div>

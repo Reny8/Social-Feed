@@ -42,7 +42,7 @@ const Buttons = (props) => {
           </svg>
         </button>
       </div>
-      <div><UpdatePost post={props.post}/></div>
+      <div><UpdatePost getAllPosts={props.getAllPosts} post={props.post}/></div>
     </div>
   );
 };

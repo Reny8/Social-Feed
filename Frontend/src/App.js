@@ -29,7 +29,7 @@ function App() {
         <CreatePost getAllPosts={getAllPosts} />
       </div>
       <div>
-        <DisplayPost posts={posts} />
+        <DisplayPost getAllPosts={getAllPosts} posts={posts} />
       </div>
     </div>
   );
