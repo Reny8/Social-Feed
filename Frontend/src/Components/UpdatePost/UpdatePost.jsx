@@ -1,20 +1,69 @@
 import React, { useState } from "react";
-import "./UpdatePost.css"
+import "./UpdatePost.css";
 const UpdatePost = (props) => {
-    const [modal, setModal] = useState("")
-    const [overlay, setOverlay] = useState("")
-    function showModal() {
-        setModal("active");
-        setOverlay("active");
-      }
-    
-      function closeModal() {
-        setModal("");
-        setOverlay("");
-      }
-  return <div>
-    <button className="edit-button" onClick={() => showModal()}><img src="https://img.icons8.com/sf-ultralight/50/000000/edit.png" alt="edit"/></button>
-  </div>;
+  const [modal, setModal] = useState("");
+  const [overlay, setOverlay] = useState("");
+  const [item, setItem] = useState({
+    date: props.post.date,
+    name: props.post.name,
+    comment: props.post.comment,
+  });
+  function showModal() {
+    setModal("active");
+    setOverlay("active");
+  }
+
+  function closeModal() {
+    setModal("");
+    setOverlay("");
+  }
+  function saveChanges(body, id) {
+    console.log(body);
+    console.log(overlay)
+
+  }
+  return (
+    <div>
+      <button className="edit-button" onClick={() => showModal()}>
+        <img
+          src="https://img.icons8.com/sf-ultralight/50/000000/edit.png"
+          alt="edit"
+        />
+      </button>
+      <div className={modal} id="edit-modal">
+        <div className="modal-header">
+          <h1>EDIT POST</h1>
+          <button onClick={() => closeModal()} className="close-modal">
+            &times;
+          </button>
+        </div>
+        <div className="modal-body">
+          <label>Name</label>
+          <input
+            className="form-control"
+            type="text"
+            value={item.name}
+            onChange={(e) => setItem({ ...item, name: e.target.value })}
+          />
+
+          <label>Comment</label>
+          <input
+            type="text"
+            className="form-control"
+            value={item.comment}
+            onChange={(e) => setItem({ ...item, comment: e.target.value })}
+          />
+
+          <button
+            onClick={() => saveChanges(item, props.post.id)}
+            className="create-button"
+          >
+            SAVE CHANGES
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default UpdatePost;

@@ -1,9 +1,56 @@
 .edit-button img {
-    width: 2rem
+  width: 2rem;
 }
 .edit-button {
-    color: black;
-    border-radius: 25px;
-    border-color:white;
-    width: 3rem
+  color: black;
+  border-radius: 25px;
+  border-color: white;
+  width: 3rem;
+}
+#edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  box-shadow: 2px 2px 6px;
+  z-index: 10;
+  width: 850px;
+  max-width: 80%;
+  background-color: white;
+  margin: 2rem;
+  border-radius: 25px;
+  padding: 20px;
+}
+#edit-modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+label {
+  margin-top: 1rem;
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.modal-header h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.close-modal {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-body {
+  padding: 10px 15px;
+}
+.modal-body .create-button {
+  width: 48.7rem;
 }

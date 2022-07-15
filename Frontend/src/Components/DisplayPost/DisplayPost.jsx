@@ -12,7 +12,7 @@ const DisplayPost = (props) => {
                 <h3>{post.name}</h3>
               </li>
               <li>{post.comment}</li>
-              <Buttons />
+              <Buttons post={post}/>
             </div>
           </ul>
         );
