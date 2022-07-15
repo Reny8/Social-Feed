@@ -2,21 +2,32 @@
     color: black;
     border-radius: 25px;
     border-color:white;
-    
+    width: 3rem;
+    padding-left: 0.8rem;
 }
 .active {
     background-color:green;
     fill:white;
     border-color:green;
     border-radius:25px;
+    width: 3rem;
+    text-align: center;
 }
 .on {
     background-color:darkred;
     fill:white;
     border-color:darkred;
     border-radius:25px;
+    width: 3rem;
+    text-align: center;
 }
 .post-buttons {
     display:flex;
     justify-content: right;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.5rem
 }

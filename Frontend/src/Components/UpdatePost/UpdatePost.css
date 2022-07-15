@@ -1,0 +1,9 @@
+.edit-button img {
+    width: 2rem
+}
+.edit-button {
+    color: black;
+    border-radius: 25px;
+    border-color:white;
+    width: 3rem
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./UpdatePost.css"
 const UpdatePost = (props) => {
     const [modal, setModal] = useState("")
     const [overlay, setOverlay] = useState("")
@@ -11,7 +12,9 @@ const UpdatePost = (props) => {
         setModal("");
         setOverlay("");
       }
-  return <div></div>;
+  return <div>
+    <button className="edit-button" onClick={() => showModal()}><img src="https://img.icons8.com/sf-ultralight/50/000000/edit.png" alt="edit"/></button>
+  </div>;
 };
 
 export default UpdatePost;
