@@ -11,7 +11,7 @@
     border-color:green;
     border-radius:25px;
     width: 3rem;
-    text-align: center;
+    padding-left: 0.8rem;
 }
 .on {
     background-color:darkred;
@@ -19,7 +19,7 @@
     border-color:darkred;
     border-radius:25px;
     width: 3rem;
-    text-align: center;
+    padding-left: 0.8rem;
 }
 .post-buttons {
     display:flex;
