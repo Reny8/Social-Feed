@@ -18,7 +18,7 @@ const UpdatePost = (props) => {
     setModal("");
     setOverlay("overlay");
   }
-  async function saveChanges(body, id) {
+  async function saveChanges(body, id) { 
     try {
       await axios.put(`http://127.0.0.1:8000/posts/${id}/`, body);
       closeModal();
