@@ -2,10 +2,11 @@
   width: 2rem;
 }
 .edit-button {
-  color: black;
-  border-radius: 25px;
+  fill:white;
+  border-radius: 5px;
   border-color: white;
   width: 3rem;
+  background-color:transparent
 }
 #edit-modal {
   position: fixed;
@@ -17,10 +18,9 @@
   z-index: 10;
   width: 850px;
   max-width: 80%;
-  background-color: white;
   margin: 2rem;
   border-radius: 5px;
-  border: 1px solid white
+  background-color:rgb(35, 33, 33)
 }
 #edit-modal.active {
   transform: translate(-50%, -50%) scale(1);
@@ -52,7 +52,9 @@ label {
   padding: 10px 15px;
 }
 .modal-body .create-button {
-  width: 50.4rem;
+  width: 50rem;
+  margin-bottom:1rem;
+  margin-top:2rem
 }
 
 .overlay {

@@ -31,7 +31,7 @@ const UpdatePost = (props) => {
     <div>
       <button className="edit-button" onClick={() => showModal()}>
         <img
-          src="https://img.icons8.com/sf-ultralight/50/000000/edit.png"
+          src="https://img.icons8.com/sf-ultralight/50/FFFFFF/edit.png"
           alt="edit"
         />
       </button>
