@@ -19,7 +19,8 @@
   max-width: 80%;
   background-color: white;
   margin: 2rem;
-  border-radius: 5px
+  border-radius: 5px;
+  border: 1px solid white
 }
 #edit-modal.active {
   transform: translate(-50%, -50%) scale(1);
@@ -54,18 +55,18 @@ label {
   width: 50.4rem;
 }
 
-#overlay {
-  position:fixed;
+.overlay {
+  position: fixed;
   opacity: 0;
   top: 0;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
   transition: 200ms ease-in-out;
   background-color: rgba(255, 247, 247, 0.312);
-  pointer-events: none
-  }
-  #overlay.active {
+  pointer-events: none;
+}
+.overlay-active {
   pointer-events: all;
-  opacity:1
-  }
+  opacity: 1;
+}
