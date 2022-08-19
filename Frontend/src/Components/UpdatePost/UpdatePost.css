@@ -19,8 +19,6 @@
   max-width: 80%;
   background-color: white;
   margin: 2rem;
-  border-radius: 25px;
-  padding: 20px;
 }
 #edit-modal.active {
   transform: translate(-50%, -50%) scale(1);
@@ -54,3 +52,19 @@ label {
 .modal-body .create-button {
   width: 48.7rem;
 }
+
+#overlay {
+  position:fixed;
+  opacity: 0;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  transition: 200ms ease-in-out;
+  background-color: rgba(255, 247, 247, 0.312);
+  pointer-events: none
+  }
+  #overlay.active {
+  pointer-events: all;
+  opacity:1
+  }
