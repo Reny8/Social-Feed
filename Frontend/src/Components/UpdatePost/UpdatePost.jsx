@@ -67,6 +67,7 @@ const UpdatePost = (props) => {
           </button>
         </div>
       </div>
+      <div className={overlay}></div>
     </div>
   );
 };
