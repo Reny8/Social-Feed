@@ -19,6 +19,7 @@
   max-width: 80%;
   background-color: white;
   margin: 2rem;
+  border-radius: 5px
 }
 #edit-modal.active {
   transform: translate(-50%, -50%) scale(1);
@@ -50,7 +51,7 @@ label {
   padding: 10px 15px;
 }
 .modal-body .create-button {
-  width: 48.7rem;
+  width: 50.4rem;
 }
 
 #overlay {
