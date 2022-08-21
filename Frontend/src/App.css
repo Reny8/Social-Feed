@@ -1,36 +1,33 @@
-
 div header {
-    background-color:rgb(35, 33, 33);
-    box-shadow: 3px 3px 7px lightgray;
-    border-style: none;
-    padding: 1rem;
-
+  background-color: rgb(35, 33, 33);
+  box-shadow: 3px 3px 7px lightgray;
+  border-style: none;
+  padding: 1rem;
 }
 
 .border-box {
-    background-color:rgb(35, 33, 33);
-    margin:2rem;
-    box-shadow: 4px 4px 8px grey;
-    border-radius: 5px;
-    padding: 20px;
-
+  background-color: rgb(35, 33, 33);
+  margin: 2rem;
+  box-shadow: 4px 4px 8px grey;
+  border-radius: 5px;
+  padding: 20px;
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .create-button {
-    margin-top: 1rem;
-    border-radius: 5px;
-    border-style: none;
-    color: white;
-    background-color:#1867AB;
-    width: 7rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  background-color: #3a3a3a;
+  width: 7rem;
 }
 
 .page {
-    background-color:#333333;
-    padding-bottom: 2rem;
-    color: white
+  background-color: #333333;
+  padding-bottom: 2rem;
+  color: white;
 }
 
