@@ -5,17 +5,18 @@
   margin-right: 1rem;
   background-color: transparent;
 }
+
 .active {
-    border:none;
+  border: none;
   width: 3rem;
   padding-left: 1rem;
   margin-right: 1rem;
   background-color: transparent;
 }
 .on {
-    border:none;
-  background-color:transparent;
-  border:none;
+  border: none;
+  background-color: transparent;
+  border: none;
   width: 3rem;
   padding-left: 1rem;
   margin-right: 1rem;
