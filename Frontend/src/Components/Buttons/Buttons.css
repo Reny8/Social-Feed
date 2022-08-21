@@ -1,37 +1,26 @@
 .inactive {
-    fill:white;
-    border-radius: 5px;
-    border-color:white;
-    width: 3rem;
-    padding-left: 1rem;
-    margin-right: 1rem;
-    background-color:transparent;
+  border: none;
+  width: 3rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  background-color: transparent;
 }
 .active {
-    background-color:green;
-    fill:white;
-    border-color:green;
-    border-radius:5px;
-    width: 3rem;
-    padding-left: 1rem;
-    margin-right: 1rem;
+    border:none;
+  width: 3rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  background-color: transparent;
 }
 .on {
-    background-color:darkred;
-    fill:white;
-    border-color:darkred;
-    border-radius:5px;
-    width: 3rem;
-    padding-left: 1rem;
-    margin-right: 1rem;
+    border:none;
+  background-color:transparent;
+  border:none;
+  width: 3rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
 }
 .post-buttons {
-    display:flex;
-    justify-content: right;
-}
-
-svg {
-    width: 3rem;
-    height: 2rem;
-    padding-top: 0.5rem;
+  display: flex;
+  justify-content: right;
 }

@@ -30,10 +30,7 @@ const UpdatePost = (props) => {
   return (
     <div>
       <button className="edit-button" onClick={() => showModal()}>
-        <img
-          src="https://img.icons8.com/sf-ultralight/50/FFFFFF/edit.png"
-          alt="edit"
-        />
+      <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/edit--v1.png" alt="edit"/>
       </button>
       <div className={modal} id="edit-modal">
         <div className="modal-header">
