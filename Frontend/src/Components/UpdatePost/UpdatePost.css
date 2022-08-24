@@ -60,7 +60,7 @@ label {
   right: 0;
   bottom: 0;
   transition: 200ms ease-in-out;
-  background-color: rgba(255, 247, 247, 0.312);
+  background-color: rgba(255, 247, 247, 0.484);
   pointer-events: none;
 }
 #overlay.active {
