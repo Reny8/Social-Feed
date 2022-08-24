@@ -3,7 +3,7 @@ import axios from "axios";
 import "./UpdatePost.css";
 const UpdatePost = (props) => {
   const [modal, setModal] = useState("");
-  const [overlay, setOverlay] = useState("overlay");
+  const [overlay, setOverlay] = useState("");
   const [item, setItem] = useState({
     date: props.post.date,
     name: props.post.name,
@@ -11,12 +11,12 @@ const UpdatePost = (props) => {
   });
   function showModal() {
     setModal("active");
-    setOverlay("overlay-active");
+    setOverlay("active");
   }
 
   function closeModal() {
     setModal("");
-    setOverlay("overlay");
+    setOverlay("");
   }
   async function saveChanges(body, id) { 
     try {
@@ -63,9 +63,9 @@ const UpdatePost = (props) => {
             SAVE CHANGES
           </button>
         </div>
-      </div>
-      <div className={overlay}></div>
-    </div>
+      </div> 
+      <div id="overlay" className={overlay}></div>
+   </div>
   );
 };
 

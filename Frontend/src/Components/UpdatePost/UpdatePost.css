@@ -13,13 +13,12 @@
   z-index: 10;
   width: 850px;
   max-width: 80%;
-  margin: 2rem;
   border-radius: 5px;
   background-color: rgb(35, 33, 33);
+  padding-left: 0;
 }
 #edit-modal.active {
   transform: translate(-50%, -50%) scale(1);
-  padding-left:0
 }
 label {
   margin-top: 1rem;
@@ -53,7 +52,7 @@ label {
   margin-top: 2rem;
 }
 
-.overlay {
+#overlay {
   position: fixed;
   opacity: 0;
   top: 0;
@@ -64,7 +63,7 @@ label {
   background-color: rgba(255, 247, 247, 0.312);
   pointer-events: none;
 }
-.overlay-active {
-  pointer-events: all;
+#overlay.active {
   opacity: 1;
+  pointer-events: all;
 }
