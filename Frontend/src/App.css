@@ -1,14 +1,13 @@
 div header {
-  background-color: rgb(35, 33, 33);
+  background-color: rgb(48, 5, 5);
   box-shadow: 3px 3px 7px lightgray;
   border-style: none;
   padding: 1rem;
 }
 
 .border-box {
-  background-color: rgb(35, 33, 33);
+  background-color: rgb(48, 5, 5);
   margin: 2rem;
-  box-shadow: 4px 4px 8px grey;
   border-radius: 5px;
   padding: 20px;
 }
