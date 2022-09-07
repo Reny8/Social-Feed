@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../../App.css"
 const CreatePost = (props) => {
   const [newPost, setNewPost] = useState({
     date: new Date().toLocaleDateString(),
